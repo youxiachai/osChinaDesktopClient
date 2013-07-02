@@ -97,7 +97,7 @@
                     </ul>
                 </div>
             </div>
-            <div  style="height: 600px;padding-left: 50px;margin-right: 10px" id="newsDetail">
+            <div style="height: 600px;padding-left: 50px;margin-right: 10px" id="newsDetail">
 
                 <article id="newsDetail2">
 
@@ -145,9 +145,9 @@
     $('#newslist2').on('click', 'a', function (e) {
         e.preventDefault();
         var newsId = $(this).attr('href');
-     //   console.log(newsId);
+        //   console.log(newsId);
         var newsData = JSON.parse(newsId);
-      //  console.log(newsData);
+        //  console.log(newsData);
 
         var pos = $('body').css('background-position').split(" ");
         console.log(pos);
@@ -163,7 +163,21 @@
 
 
 </script>
+<script>
 
+    $("#settings").click(function (e) {
+        $('.alert').alert('close');
+        var alertMsg = '<div class="alert"> <button type="button" class="close" data-dismiss="alert"></button><strong>Warning!</strong>该功能没有开发</div>';
+        $("#warningMsg").append(alertMsg);
+    });
+
+    $("#logged-user").click(function (e) {
+        $('.alert').alert('close');
+        var alertMsg = '<div class="alert"> <button type="button" class="close" data-dismiss="alert"></button><strong>Warning!</strong>该功能没有开发</div>';
+        $("#warningMsg").append(alertMsg);
+    });
+
+</script>
 
 </body>
 </html>

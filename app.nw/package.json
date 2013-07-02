@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "window": {
         "title" : "Oschina",
-        "icon": "app/img/favicon.png",
+        "icon": "app/img/favicon.ico",
         "as_desktop" : false,
         "resizable" : false,
         "always-on-top" : false,
@@ -13,12 +13,12 @@
         "frame" : true,
         "toolbar": false,
         "width": 900,
-        "height": 620,
+        "height": 750,
         "position": "center",
         "min_width": 900,
-        "min_height": 620,
+        "min_height": 750,
         "max_width": 900,
-        "max_height": 620
+        "max_height": 750
     },
     "main" : "index.html"
 }
