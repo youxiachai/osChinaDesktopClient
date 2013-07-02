@@ -1,0 +1,24 @@
+{
+    "name": "Oschina",
+    "description": "Oschina",
+    "version": "0.1.0",
+    "window": {
+        "title" : "Oschina",
+        "icon": "app/img/favicon.png",
+        "as_desktop" : false,
+        "resizable" : false,
+        "always-on-top" : false,
+        "fullscreen" : false,
+        "kiosk" : false,
+        "frame" : true,
+        "toolbar": false,
+        "width": 900,
+        "height": 620,
+        "position": "center",
+        "min_width": 900,
+        "min_height": 620,
+        "max_width": 900,
+        "max_height": 620
+    },
+    "main" : "index.html"
+}

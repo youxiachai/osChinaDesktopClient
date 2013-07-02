@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Oschina</title>
+
+
+    <!-- remove or comment this line if you want to use the local fonts -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>-->
+
+    <link rel="stylesheet" type="text/css" href="app/bootmetro/css/bootmetro.css">
+    <link rel="stylesheet" type="text/css" href="app/bootmetro/css/bootmetro-responsive.css">
+    <link rel="stylesheet" type="text/css" href="app/bootmetro/css/bootmetro-icons.css">
+    <link rel="stylesheet" type="text/css" href="app/bootmetro/css/bootmetro-ui-light.css">
+
+    <script type="text/javascript" src="app/bootmetro/js/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="app/bootmetro/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="app/bootmetro/js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="app/bootmetro/js/min/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/bootmetro/js/bootmetro-panorama.js"></script>
+
+    <script src="app/bootmetro/js/modernizr-2.6.2.min.js"></script>
+    <script src="app/ejs/ejs_production.js"></script>
+    <script type="application/javascript" src="app/iscorll/iscroll.js"></script>
+
+    <style type="text/css">
+        li {
+            list-style: none;
+            color: #000000;
+        }
+
+        ul, ol {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+
+</head>
+
+<body style="overflow: hidden">
+<div id="result">
+</div>
+<div id="wrap">
+
+    <!-- Header
+    ================================================== -->
+    <div id="nav-bar" class="">
+        <script>
+            var template = new EJS({url: 'app/views/header.ejs'})
+            document.getElementById('nav-bar').innerHTML = template.render();
+        </script>
+    </div>
+
+</div>
+
+
+<!--<div id="metro-container" class="-container">-->
+<!--<div class="row">-->
+<!--<div id="hub" class="metro">-->
+<div class="metro panorama">
+    <div class="panorama-sections">
+
+        <div class="panorama-section tile-span-2" style="padding-right: 10px">
+            <h2>动弹</h2>
+
+            <div id="wrapper" style="height: 600px;overflow: hidden; left: 0px;">
+                <div>
+                    <div id="pullDown">
+                        <span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+                    </div>
+
+                    <ul id="dongtanlist" class="clearfix">
+
+                    </ul>
+                    <div id="pullUp" class="clearfix">
+                        <span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="panorama-section tile-span-6">
+
+            <h2>综合资讯</h2>
+
+            <div id="wrapper2" class="tile-column-span-2" style="height: 600px;float: left">
+                <div id="scroller2">
+
+                    <ul id="newslist2">
+
+                    </ul>
+                </div>
+            </div>
+            <div  style="height: 600px;padding-left: 50px;margin-right: 10px" id="newsDetail">
+
+                <article id="newsDetail2">
+
+                </article>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+<div>
+    <a id="panorama-scroll-prev" href="#"></a>
+    <a id="panorama-scroll-next" href="#"></a>
+
+    <div id="panorama-scroll-prev-bkg"></div>
+    <div id="panorama-scroll-next-bkg"></div>
+</div>
+
+
+<script type="text/javascript">
+    var panorama = $('.panorama').panorama({
+        //nicescroll: false,
+        showscrollbuttons: true,
+        keyboard: true,
+        parallax: true,
+        mousewheel: false
+    });
+
+</script>
+<script src="app/model/oschinaApi.js"></script>
+<script src="app/iscorll/custom.js"></script>
+
+
+<script>
+    //防止变量污染
+    (function ($) {
+        //动弹列表
+        oscTweets($, 0, 20, {url: 'app/views/list.ejs', id: 'dongtanlist'});
+        oscNewsList($, {url: 'app/views/newslist.ejs', id: 'newslist2'});
+    })(window.jQuery);
+
+    $('#newslist2').on('click', 'a', function (e) {
+        e.preventDefault();
+        var newsId = $(this).attr('href');
+     //   console.log(newsId);
+        var newsData = JSON.parse(newsId);
+      //  console.log(newsData);
+
+        var pos = $('body').css('background-position').split(" ");
+        console.log(pos);
+        if (pos[0] === '0%' || pos[0] === '0' || pos[0] === '0px') {
+            $('#panorama-scroll-next').click();
+        }
+        oscDetails($, newsData, function (e) {
+            var body = $(e).find('body').text();
+            $('#newsDetail2').html(body);
+        });
+
+    })
+
+
+</script>
+
+
+</body>
+</html>

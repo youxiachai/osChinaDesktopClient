@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<oschina>
+  <catalog>0</catalog>
+  <newsCount>0</newsCount>
+  <pagesize>20</pagesize>
+  <newslist>
+						    <news>
+            	        <id>41875</id>
+      <title><![CDATA[ICEfaces EE 3.3.0.GA 发布]]></title>
+      <commentCount>0</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-30 07:47:40</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41873</id>
+      <title><![CDATA[Kubuntu 13.10 Alpha 1 发布]]></title>
+      <commentCount>8</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 15:18:50</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+									    <news>
+            	        <id>10001086</id>
+      <title><![CDATA[PHP 使用协同程序实现合作多任务 ]]></title>
+      <commentCount>19</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:17:42</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+									    <news>
+            	        <id>10001123</id>
+      <title><![CDATA[#翻译# 如何管理一个远程团队]]></title>
+      <commentCount>7</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:17:25</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41870</id>
+      <title><![CDATA[谷歌 Chrome OS 开发版新增 Office 编辑功能]]></title>
+      <commentCount>11</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:16:16</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41869</id>
+      <title><![CDATA[Percona Server 5.6.12-60.4 RC2 发布]]></title>
+      <commentCount>3</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:14:27</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41868</id>
+      <title><![CDATA[游戏引擎 Unity3D 对微软开发者免费开放]]></title>
+      <commentCount>12</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:13:10</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+									    <news>
+                        <id>41867</id>
+      <title><![CDATA[【每日一博】Raspberry Pi 树莓派性能测试]]></title>
+      <commentCount>8</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:09:55</pubDate>
+      <url>http://my.oschina.net/funnky/blog/141251</url>
+	  <newstype>
+	    <type>3</type>
+	    <attachment>141251</attachment>		<authoruid2>817765</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41866</id>
+      <title><![CDATA[GhostBSD 3.1 发布，基于GNOME的FreeBSD发行]]></title>
+      <commentCount>7</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:01:58</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41865</id>
+      <title><![CDATA[Android 4.3 发布时间确定]]></title>
+      <commentCount>11</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 08:00:26</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41864</id>
+      <title><![CDATA[Django 1.6 beta 1 发布，Python 开发框架]]></title>
+      <commentCount>3</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:58:08</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41863</id>
+      <title><![CDATA[FreeMarker 2.3.20 发布，Java 模板引擎]]></title>
+      <commentCount>12</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:54:27</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41862</id>
+      <title><![CDATA[SparkyLinux 3.0 Beta 2 发布]]></title>
+      <commentCount>2</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:53:19</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41861</id>
+      <title><![CDATA[DataNucleus Access Platform 3.3 正式版发布]]></title>
+      <commentCount>0</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:51:48</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41860</id>
+      <title><![CDATA[Sublime Text 3 Build 3047 发布]]></title>
+      <commentCount>12</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:50:23</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41859</id>
+      <title><![CDATA[程序员如何成功的假装在很努力的工作]]></title>
+      <commentCount>24</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:48:44</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41858</id>
+      <title><![CDATA[开源组织非营利申请受到国税局刁难]]></title>
+      <commentCount>16</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:44:44</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41857</id>
+      <title><![CDATA[GIMP 2.8.6 发布，免费开源 PS 软件]]></title>
+      <commentCount>6</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:43:53</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41856</id>
+      <title><![CDATA[j-Interop 3.0.0 发布，Java 的 COM 组件封装]]></title>
+      <commentCount>2</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:40:29</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+							    <news>
+            	        <id>41855</id>
+      <title><![CDATA[Aspose.Slides for Java 7.5.0 发布]]></title>
+      <commentCount>0</commentCount>
+      <author><![CDATA[oschina]]></author>
+	  <authorid>1</authorid>
+      <pubDate>2013-06-29 07:38:45</pubDate>
+      <url></url>
+	  <newstype>
+	    <type>0</type>
+	    		<authoruid2>1</authoruid2>
+	  </newstype>
+    </news>
+		  </newslist>
+</oschina>
+<!-- Generated by OsChina.NET (init:0[ms],page:4[ms],ip:211.155.120.242) -->

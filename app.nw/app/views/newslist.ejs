@@ -1,0 +1,6 @@
+
+<% for(var i =0;  i < newsList.length; i++) { %>
+<% var newsItem =  newsList[i]; %>
+<li class="tile-listviewitem"><a href='<%= JSON.stringify(newsItem) %>'><%= newsItem.title %></a></li>
+
+<% } %>

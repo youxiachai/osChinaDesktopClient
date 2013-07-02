@@ -1,0 +1,15 @@
+
+
+<% for(var i=0; i < tweets.length; i++){ %>
+<li>
+    <a href="#" class="tile wide imagetext">
+        <div class="image-wrapper">
+            <img alt="50x50" src="<%= tweets[i].portrait %>">
+        </div>
+        <div class="column-text">
+            <div class="text-header"><%= tweets[i].autor %></div>
+            <div class="text4"><%= tweets[i].body %></div>
+        </div>
+    </a>
+</li>
+<% } %>
