@@ -73,19 +73,4 @@ var oscNewsList = function ($, temlp) {
 
 //http://www.oschina.net/action/api/news_detail
 
-// type = 3 为博客
-// type = 0 为新闻
-var oscDetails = function ($, newsData, callback) {
-    var detail = '';
-    var newsType = newsData.newstype;
-    console.log(newsType);
-    if (newsType.type === '0') {
-        detail = 'http://www.oschina.net/action/api/news_detail?id=' + newsData.id;
-    } else if (newsType.type === '3') {
-        detail = 'http://www.oschina.net/action/api/blog_detail?id' + newsType.authoruid2;
-    }
-    console.log(detail);
-
-    $.get(detail, callback);
-}
 

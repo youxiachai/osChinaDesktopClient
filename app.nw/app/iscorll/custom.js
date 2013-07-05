@@ -12,14 +12,17 @@ var myScroll,
 
 function pullDownAction() {
     //动弹列表
-    oscTweets($, 0, 20, {url: 'app/views/list.ejs', id: 'dongtanlist'});
+   // oscTweets($, 0, 20, {url: 'app/views/list.ejs', id: 'dongtanlist'});
+    app.tweetList.fetch({index:'0', pageSize: '20', method: 'refresh'});
 }
 
 function pullUpAction() {
     var nowCount = $('#dongtanlist').children().length;
     console.log(nowCount);
     var pageIndex = nowCount / 20 + 1;
-    oscTweets($, pageIndex, 20, {url: 'app/views/list.ejs', id: 'dongtanlist', update: true});
+//    oscTweets($, pageIndex, 20, {url: 'app/views/list.ejs', id: 'dongtanlist', update: true});
+   // app.tweetList.sync('read', app.tweetList, {index:pageIndex, pageSize: '20', method: 'loadMore'});
+    app.tweetList.fetch({index:pageIndex, pageSize: '20', method: 'loadMore'});
 }
 
 function loaded() {

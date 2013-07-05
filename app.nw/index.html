@@ -22,9 +22,11 @@
     <script type="text/javascript" src="app/bootmetro/js/bootmetro-panorama.js"></script>
 
     <script src="app/bootmetro/js/modernizr-2.6.2.min.js"></script>
-    <script src="app/ejs/ejs_production.js"></script>
+
     <script type="application/javascript" src="app/iscorll/iscroll.js"></script>
 
+    <script type="text/javascript" src="app/backbone/underscore.js"></script>
+    <script type="text/javascript" src="app/backbone/backbone.js"></script>
     <style type="text/css">
         li {
             list-style: none;
@@ -48,10 +50,26 @@
     <!-- Header
     ================================================== -->
     <div id="nav-bar" class="">
-        <script>
-            var template = new EJS({url: 'app/views/header.ejs'})
-            document.getElementById('nav-bar').innerHTML = template.render();
-        </script>
+        <div class="row">
+            <div id="header-container" class="span3">
+                <h1>开源中国</h1>
+            </div>
+            <div id="warningMsg" class="span7">
+            </div>
+            <div id="top-info" class="pull-right">
+                <a id="settings" href="#" class="win-command pull-right">
+                    <span class="win-commandicon win-commandring icon-cog-3"></span>
+                </a>
+                <a id="logged-user" href="#" class="win-command pull-right">
+                    <span class="win-commandicon win-commandring icon-user"></span>
+                </a>
+
+                <div class="pull-left">
+                    <h3>未开发</h3>
+                    <h4>未开发</h4>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -73,7 +91,22 @@
                     </div>
 
                     <ul id="dongtanlist" class="clearfix">
+                        <script type="text/template" id="tweet-template">
 
+                            <% tweets.each(function(tweet){ %>
+                            <li>
+                                <a href="#" class="tile wide imagetext">
+                                    <div class="image-wrapper">
+                                        <img alt="50x50" src="<%= tweet.get('portrait') %>">
+                                    </div>
+                                    <div class="column-text">
+                                        <div class="text-header"><%= tweet.get('author') %></div>
+                                        <div class="text4"><%= tweet.get('body') %></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <% }) %>
+                        </script>
                     </ul>
                     <div id="pullUp" class="clearfix">
                         <span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
@@ -93,7 +126,13 @@
                 <div id="scroller2">
 
                     <ul id="newslist2">
+                        <script type="text/template" id="newsList-template">
 
+                            <% newsList.each(function(news){ %>
+                            <li class="tile-listviewitem"><a href='<%= JSON.stringify(news.attributes)%>'><%=
+                                news.get('title') %></a></li>
+                            <% }) %>
+                        </script>
                     </ul>
                 </div>
             </div>
@@ -131,37 +170,18 @@
 
 </script>
 <script src="app/model/oschinaApi.js"></script>
+
+
+<script src="app/model/tweet.js"></script>
+<script src="app/model/news.js"></script>
+<script src="app/collections/tweetList.js"></script>
+<script src="app/collections/newsList.js"></script>
+<script src="app/views/tweetListViews.js"></script>
+<script src="app/views/newsListView.js"></script>
 <script src="app/iscorll/custom.js"></script>
-
-
 <script>
-    //防止变量污染
-    (function ($) {
-        //动弹列表
-        oscTweets($, 0, 20, {url: 'app/views/list.ejs', id: 'dongtanlist'});
-        oscNewsList($, {url: 'app/views/newslist.ejs', id: 'newslist2'});
-    })(window.jQuery);
-
-    $('#newslist2').on('click', 'a', function (e) {
-        e.preventDefault();
-        var newsId = $(this).attr('href');
-        //   console.log(newsId);
-        var newsData = JSON.parse(newsId);
-        //  console.log(newsData);
-
-        var pos = $('body').css('background-position').split(" ");
-        console.log(pos);
-        if (pos[0] === '0%' || pos[0] === '0' || pos[0] === '0px') {
-            $('#panorama-scroll-next').click();
-        }
-        oscDetails($, newsData, function (e) {
-            var body = $(e).find('body').text();
-            $('#newsDetail2').html(body);
-        });
-
-    })
-
-
+    var addView = new app.TweetListView();
+    var newsListView = new app.NewsListView();
 </script>
 <script>
 
